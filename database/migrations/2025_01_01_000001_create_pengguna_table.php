@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->string('no_hp')->nullable(); // Sesuai tebakan umum
+            $table->string('no_telp')->nullable(); // Diubah dari no_hp ke no_telp agar sesuai controller
             $table->text('alamat')->nullable();
             $table->integer('umur')->nullable();
             $table->string('pekerjaan')->nullable();
