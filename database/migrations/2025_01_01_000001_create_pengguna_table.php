@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nama'); // Awalnya 'nama', nanti di-rename jadi 'name'
             $table->string('email')->unique();
+            $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('no_hp')->nullable(); // Sesuai tebakan umum
             $table->text('alamat')->nullable();
