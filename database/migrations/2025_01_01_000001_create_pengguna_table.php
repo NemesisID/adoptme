@@ -19,6 +19,9 @@ return new class extends Migration
             $table->string('password');
             $table->string('no_hp')->nullable(); // Sesuai tebakan umum
             $table->text('alamat')->nullable();
+            $table->integer('umur')->nullable();
+            $table->string('pekerjaan')->nullable();
+            $table->string('path_foto_ktp')->nullable();
             $table->string('role')->default('user');
             $table->timestamps();
         });
